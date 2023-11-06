@@ -9,6 +9,17 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
+    options: {
+      storySort: {
+        order: [
+          "Introduction",
+          ["Welcome", "Release-Notes"],
+          "Style",
+          "Components",
+          "Example Storybook"
+        ],
+      },
+    },
   },
 };
 

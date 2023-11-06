@@ -1,6 +1,6 @@
 {
   "name": "next-storybook-ro",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "scripts": {
     "dev": "next dev",
@@ -8,12 +8,16 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test-storybook": "test-storybook"
   },
   "dependencies": {
+    "@storybook/manager-api": "^7.5.2",
     "next": "14.0.0",
     "react": "^18",
     "react-dom": "^18",
+    "string-width": "^7.0.0",
+    "strip-ansi": "^7.1.0",
     "styled-components": "^6.1.0"
   },
   "devDependencies": {
@@ -22,8 +26,10 @@
     "@storybook/addon-links": "^7.5.2",
     "@storybook/addon-onboarding": "^1.0.8",
     "@storybook/blocks": "^7.5.2",
+    "@storybook/jest": "^0.2.3",
     "@storybook/nextjs": "^7.5.2",
     "@storybook/react": "^7.5.2",
+    "@storybook/test-runner": "^0.13.0",
     "@storybook/testing-library": "^0.2.2",
     "@types/node": "^20",
     "@types/react": "^18",
@@ -33,6 +39,11 @@
     "eslint-plugin-storybook": "^0.6.15",
     "storybook": "^7.5.2",
     "typescript": "^5"
+  },
+  "resolutions": {
+    "string-width": "^4",
+    "jackspeak": "2.1.1",
+    "strip-ansi": "^6"
   },
   "publishConfig": {
     "access": "public"
